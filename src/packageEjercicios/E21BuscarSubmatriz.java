@@ -28,12 +28,12 @@ public class E21BuscarSubmatriz {
         ///NOTA: Activar solo uno de los dos métodos de llenados de las matrices, no ejecutar al tiempo!
         
         //METODO 1 LLENADO MANUAL DE MATRICES - OJO Para Dim1=10 y Dim2=3
-        int[][] matrizM = llenarMatriz1Manual(matriz1);
-        int[][] matrizP =llenarMatriz2Manual(matriz2);
+        //int[][] matrizM = llenarMatriz1Manual(matriz1);
+       //int[][] matrizP =llenarMatriz2Manual(matriz2);
         
         //METODO 2 LLENADO ALEATORIO DE MATRICES:
-        //int[][] matrizM = llenarMatriz(matriz1, m);
-        //int[][] matrizP =llenarMatriz(matriz2, p);
+        int[][] matrizM = llenarMatriz(matriz1, m);
+        int[][] matrizP =llenarMatriz(matriz2, p);
         
         impreMatriz(matrizM, m, 1);
         impreMatriz(matrizP, p, 2);
@@ -222,7 +222,10 @@ public class E21BuscarSubmatriz {
 
                 }
             }
-        }   
+        }
+        if (cont==0) {
+            System.out.println("No se encontraron conincidencias válidas, en el primer número de ambas matrices");
+        }
     }
 }
     
