@@ -28,12 +28,12 @@ public class E21BuscarSubmatriz {
         ///NOTA: Activar solo uno de los dos métodos de llenados de las matrices, no ejecutar al tiempo!
         
         //METODO 1 LLENADO MANUAL DE MATRICES - OJO Para Dim1=10 y Dim2=3
-        //int[][] matrizM = llenarMatriz1Manual(matriz1);
-       //int[][] matrizP =llenarMatriz2Manual(matriz2);
+        int[][] matrizM = llenarMatriz1Manual(matriz1);
+        int[][] matrizP =llenarMatriz2Manual(matriz2);
         
         //METODO 2 LLENADO ALEATORIO DE MATRICES:
-        int[][] matrizM = llenarMatriz(matriz1, m);
-        int[][] matrizP =llenarMatriz(matriz2, p);
+        //int[][] matrizM = llenarMatriz(matriz1, m);
+        //int[][] matrizP =llenarMatriz(matriz2, p);
         
         impreMatriz(matrizM, m, 1);
         impreMatriz(matrizP, p, 2);
@@ -55,8 +55,21 @@ public class E21BuscarSubmatriz {
     
     //Función 1.1 Llenado manual de matriz 1
     public static int[][] llenarMatriz1Manual(int[][] matriz1){
+        int [][] matrizX = {
+            {1,26,36,47,5,6,72,81,95,10},
+            {11,12,13,21,41,22,67,20,10,61},
+            {56,78,87,90,9,90,17,12,87,67},
+            {41,87,24,56,97,74,87,42,64,35},
+            {32,76,79,1,36,5,67,96,12,11},
+            {99,13,54,88,89,90,75,12,41,76},
+            {67,78,87,45,14,22,26,42,56,78},
+            {98,45,34,23,32,56,74,16,19,18},
+            {24,67,97,46,87,13,67,89,93,24},
+            {21,68,78,98,90,67,12,41,65,12}};
         
-        matriz1[0][0]=1;
+        return matrizX;
+        
+     /*matriz1[0][0]=1;
         matriz1[0][1]=26;
         matriz1[0][2]=36;
         matriz1[0][3]=47;
@@ -157,14 +170,35 @@ public class E21BuscarSubmatriz {
         matriz1[9][8]=65;
         matriz1[9][9]=12;
         
-        return matriz1;
+        Otras matrices para evaluar
+        int[][] P = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        int[][] M = {
+            {5, 7, 6, 1, 4, 9, 2, 0, 1, 5},
+            {2, 1, 9, 8, 7, 6, 5, 4, 3, 7},
+            {8, 3, 0, 3, 4, 5, 6, 7, 8, 8},
+            {3, 7, 9, 2, 1, 6, 3, 4, 9, 4},
+            {4, 1, 3, 4, 4, 5, 6, 7, 8, 0},
+            {5, 2, 7, 6, 7, 8, 9, 10, 7, 2},
+            {9, 1, 2, 3, 3, 2, 5, 4, 6, 3},
+            {8, 4, 5, 6, 3, 1, 1, 2, 3, 9},
+            {4, 7, 8, 9, 9, 10, 4, 5, 6, 7},
+            {0, 5, 0, 6, 1, 2, 7, 8, 9, 1}};
+        
+        */
+     
     }
-    
+        
+     
     
      //Función 1.2 Llenado manual de matriz 2
     public static int[][] llenarMatriz2Manual(int[][] matriz2){
         
-        matriz2[0][0]=36;
+        int[][] matrizY = {
+            {36,5,67}, 
+            {89,90,75}, 
+            {14,22,26}};
+        
+        /*matriz2[0][0]=36;
         matriz2[0][1]=5;
         matriz2[0][2]=67;
         matriz2[1][0]=89;  
@@ -172,9 +206,9 @@ public class E21BuscarSubmatriz {
         matriz2[1][2]=75;
         matriz2[2][0]=14;  
         matriz2[2][1]=22;
-        matriz2[2][2]=26;
+        matriz2[2][2]=26;*/
        
-        return matriz2;
+        return matrizY;
     }
     
     //Procedimiento 1 Impresión de matrices
